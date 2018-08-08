@@ -1,0 +1,178 @@
+<html>
+    
+   <head>
+       <meta charset="utf-8">  <!self enclosed tag>
+       
+       <title> Research Project
+ </title>
+
+       
+       
+       <style>
+       
+           .column{
+               
+               float: left;
+           }
+       
+       </style>
+   </head>
+    
+    <body>
+    <h1>"A SmartCap for monitoring applications"</h1>
+        
+        <h3> Design by: <br/> 1. Dr. Bonny Banerjee <br/> 2. Saurabh Pahune
+        </h3>
+    
+        <p>
+            Monitoring applications are abundant in today's world. Our goal is to monitor an individual and his neighborhood using wearable sensors in a cap. The cap is smart in the sense it can process the captured data in near real-time and communicate opportunistically with other caps as well as smartphones and computers. In this thesis, we develop the hardware platform using existing components to support such functionalities. The Nvidia Jetson TK1 board is used as the processor as it is one of the most powerful processors for embedded applications with the flexibility to connect to a plethora of sensors. Data transfer for communication is facilitated via Bluetooth and Wi-Fi. Results on the performance of the cap is reported on experiments with different sensors such as cameras, microphone, gas sensor, temperature/pressure/humidity sensor, and smart health watch, using metrics such as read/write speed, heat generated, and transmission delay. Algorithms for data processing and communication are beyond the scope of this thesis.
+
+
+    </p>
+<!--        <h2> Hardware Components to design SmartCap</h2>-->
+        
+        <h2> <strong>Hardware Components to design SmartCap</strong> </h2>
+        
+        <ul>
+            
+        <li> Embedded processor (Nvidia Jetson TK1 board)</li>
+        <li>Wi-Fi and Bluetooth </li>
+        <li>Antenna </li>
+        <li> Temperature/Pressure/Humidity sensor</li>
+        <li>USB camera </li>
+        <li> Microphone</li>
+        <li>  Gas sensor</li>
+        <li> Smart health wristwatch [Garmin Viviactive-HR]</li>
+        
+        
+        </ul>
+        
+        <div class="column">
+            
+        <img src= "images/Jetsontk1%20copy.png" width="600px" height="400px" alt="Jetson TK1">
+        <p> Image1: Jetson TK1 with Multiple sensor</p>
+            
+        </div>
+        
+        <div class="column">
+            
+         <img src= "images/Jetson%20tk1%20with%20antenna.JPG" width="600px" height="400px" alt="Jetson TK1 Antenna">
+    <p> Image2: Jetson TK1 with Wifi-Bluetooth</p>
+            
+        </div>
+        
+        <div class="column">
+            
+         <img src= "images/Garmin_smartwatch.JPG" width="600px" height="400px" alt="Jetson TK1 Antenna">
+    <p> Image3: Jetson TK1 with Garmin watch</p>
+            
+        </div>
+        
+          
+        <div class="column">
+            
+         <img src= "images/Garmin.fit.JPG" width="600px" height="400px" alt="Jetson TK1 Antenna">
+    <p> Image4: Jetson TK1 with Garmin watch with .fit(fitness file) inside TK1 board</p>
+            
+        </div>
+        
+        <h3><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Live streaming using RTSP protocol with Jetson TK1 <br/></h3>
+                <p> Please see the video in a sequential manner!</p>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/5VHQ899fWDw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/s0i1Xz5dW4A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ucOL2axw6aw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        
+        <h3> Data sending and receving using two TK1 devices: </h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VGtogq0Q_Bo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        
+<!--        //<!above copy link from youtube>share>embedd and copy link>-->
+        
+        <h2> <br/>Data collection result using Jetson TK1 device with multiple sensors: </h2>
+        
+          <div class="column">
+            
+         <img src= "images/THplot.png" width="600px" height="400px" alt="Jetson TK1 Antenna">
+    <p> Image5: Ambient temperature and humidity plot vs Time </p> 
+            
+        </div>
+        
+        
+         <div class="column">
+            
+         <img src= "images/TPplot.png" width="600px" height="400px" alt="Jetson TK1 Antenna">
+    <p> Image6: Ambient temperature and pressure plot vs Time </p>
+            
+        </div>
+        
+           <div class="column">
+            
+         <img src= "images/HPplot.png" width="600px" height="400px" alt="Jetson TK1 Antenna">
+    <p> Image7: Ambient humidity and pressure plot vs Time </p>
+            
+        </div>
+        
+              <h2> <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>System speed using Jetson TK1 device with multiple sensors: </h2>
+        
+         
+           <div class="column">
+            
+         <img src= "images/all%20wrtting%20data.png" width="600px" height="400px" alt="Jetson TK1 Antenna">
+    <p> Image8: Ambient humidity and pressure plot vs Time <br/> </p>
+            
+        </div>
+        
+        
+            <div class="column">
+            
+         <img src= "images/writing%20data.png" width="600px" height="400px" alt="Jetson TK1 Antenna">
+    <p> Image9: Memory card vs Writing speed characteristics@10,20,30,50fps</p>
+                
+<!--       <img src= "images/reading%20speed%20graph.png" width="600px" height="400px" alt="Jetson TK1 Antenna">          -->
+            
+        </div>
+        
+         <div class="column">
+            
+         <img src= "images/reading%20data.png" width="600px" height="400px" alt="Jetson TK1 Antenna">
+    <p> Image10: Memory card vs Reading speed characteristics@10,20,30,50fps</p>
+            
+        </div>
+        
+        <h2>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Time vs CPU temperature characteristics w.r.t with fan and without fan </h2>
+        
+            <div class="column">
+            
+         <img src= "images/10fps.png" width="600px" height="400px" alt="Jetson TK1 Antenna">
+    <p> <strong>Image11:</strong> Time vs CPU temperature characteristics @10fps with multiple data collection w.r.t with fan and without fan. </p>
+            
+        </div>
+            <div class="column">
+            
+         <img src= "images/20fps.png" width="600px" height="400px" alt="Jetson TK1 Antenna">
+    <p> <strong>Image12: </strong>Time vs CPU temperature characteristics @20fps with multiple data collection w.r.t with fan and without fan. </p>
+            
+        </div>
+            <div class="column">
+            
+         <img src= "images/30fps.png" width="600px" height="400px" alt="Jetson TK1 Antenna">
+    <p>  <strong>Image13:</strong> Time vs CPU temperature characteristics @30fps with multiple  data collection w.r.t with fan and without fan.</p>
+            
+                
+        </div>
+     
+        
+            <div>
+                
+         <img src= "images/50fps.png" width="600px" height="400px" alt="Jetson TK1 Antenna">
+    <p>  <strong>Image14:</strong> Time vs CPU temperature characteristics @50fps with multiple data collection w.r.t with fan and without fan. </p>
+            
+        </div>
+        
+        
+        
+    </body>
+
+</html>
